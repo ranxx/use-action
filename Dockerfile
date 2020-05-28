@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM alpine:latest
 
 # RUN sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
 # RUN apt-get update
