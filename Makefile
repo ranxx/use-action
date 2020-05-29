@@ -2,7 +2,7 @@ $(shell /bin/bash ./makefile.env.sh)
 tag=$(shell date +%s)
 
 build:
-	CGO_ENABLED=0 go build -o use-action main.go
+	CGO_ENABLED=0 go build -o use-action -a -v -n -x main.go
 linux:
 	CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o use-action main.go
 docker-build:
